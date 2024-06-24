@@ -1,16 +1,9 @@
 import React, { useEffect } from 'react'
-import Banner from '../../Component/Banner/Banner'
-import Overview from '../../Component/Overview/Overview'
-import About from '../../Component/About/About'
-import Highlights from '../../Component/Highlights/Highlights'
-import Walkthrough from '../../Component/Walkthrough/Walkthrough'
-import { useLocation } from 'react-router-dom'
-import Plans from '../../Component/Plans/Plans'
-import Location from '../../Component/Location/Location'
-import HGallery from '../../Component/HGallery/HGallery'
-import Icons from '../../Component/Icons/Icons'
+import "./FloorPlan.css"
+import FloorPlanData from './FloorPlanData'
+import { useLocation } from 'react-router-dom';
 
-const Home = (props) => {
+const FloorPlan = (props) => {
     /* global dataLayer */
     const location = useLocation();
 
@@ -51,29 +44,36 @@ const Home = (props) => {
             const script = document.createElement('script');
             script.id = gaScriptId;
             script.async = true;
-            // script.src = 'https://www.googletagmanager.com/gtag/js?id=G-2RCPYCCP0C';
+            script.src = 'https://www.googletagmanager.com/gtag/js?id=G-S2XS9C6S8C';
             document.head.appendChild(script);
 
             script.onload = () => {
                 gtag('js', new Date());
-                // gtag('config', 'G-2RCPYCCP0C');
+                gtag('config', 'G-S2XS9C6S8C');
             };
         }
     }, [props.title, props.descriptions, location.pathname]);
-
     return (
-        <div className='home'>
-            <Banner />
-            <About />
-            <Overview />
-            <HGallery />
-            <Icons />
-            <Highlights />
-            <Plans />
-            <Location />
-            <Walkthrough />
+        <div className='FloorPlan'>
+            <div className='FloorPlan-main'>
+                <div className="Page-title">
+                    <h1>Floor Plan</h1>
+                </div>
+                {FloorPlanData.map((item) => (
+                    <>
+                        <div className="floorplan-box">
+                            <div className="floorplan-box-image">
+                                <img src={item.cover1} alt={item.alttag1} />
+                            </div>
+                            <div className="floorplan-box-image">
+                                <img src={item.cover2} alt={item.alttag2} />
+                            </div>
+                        </div>
+                    </>
+                ))}
+            </div>
         </div>
     )
 }
 
-export default Home;
+export default FloorPlan

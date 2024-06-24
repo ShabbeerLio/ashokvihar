@@ -1,16 +1,9 @@
 import React, { useEffect } from 'react'
-import Banner from '../../Component/Banner/Banner'
-import Overview from '../../Component/Overview/Overview'
-import About from '../../Component/About/About'
-import Highlights from '../../Component/Highlights/Highlights'
-import Walkthrough from '../../Component/Walkthrough/Walkthrough'
-import { useLocation } from 'react-router-dom'
-import Plans from '../../Component/Plans/Plans'
-import Location from '../../Component/Location/Location'
-import HGallery from '../../Component/HGallery/HGallery'
-import Icons from '../../Component/Icons/Icons'
+import "./Location.css"
+import { useLocation } from 'react-router-dom';
 
-const Home = (props) => {
+const Location = (props) => {
+
     /* global dataLayer */
     const location = useLocation();
 
@@ -45,35 +38,33 @@ const Home = (props) => {
             dataLayer.push(arguments);
         }
 
+
         // Load the Google Analytics script only once
         const gaScriptId = 'ga-gtag';
         if (!document.getElementById(gaScriptId)) {
             const script = document.createElement('script');
             script.id = gaScriptId;
             script.async = true;
-            // script.src = 'https://www.googletagmanager.com/gtag/js?id=G-2RCPYCCP0C';
+            script.src = 'https://www.googletagmanager.com/gtag/js?id=G-S2XS9C6S8C';
             document.head.appendChild(script);
 
             script.onload = () => {
                 gtag('js', new Date());
-                // gtag('config', 'G-2RCPYCCP0C');
+                gtag('config', 'G-S2XS9C6S8C');
             };
         }
     }, [props.title, props.descriptions, location.pathname]);
 
     return (
-        <div className='home'>
-            <Banner />
-            <About />
-            <Overview />
-            <HGallery />
-            <Icons />
-            <Highlights />
-            <Plans />
-            <Location />
-            <Walkthrough />
+        <div className='location'>
+            <div className="Page-title">
+                <h1>LOCATION</h1>
+            </div>
+            <div className="location-box">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3499.876703856984!2d77.18022682087717!3d28.69333462758402!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d0213ccb6190d%3A0x4d83ad89d593189f!2sChaudhary%20Gulab%20Singh%20Marg%2C%20Ashok%20Vihar%20III%2C%20Ashok%20Vihar%2C%20Delhi!5e0!3m2!1sen!2sin!4v1719228008832!5m2!1sen!2sin" ></iframe>
+            </div>
         </div>
     )
 }
 
-export default Home;
+export default Location
