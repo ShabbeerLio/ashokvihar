@@ -2,7 +2,7 @@ import React, { useRef, useState } from 'react'
 // import emailjs from '@emailjs/browser';
 import "./Form.css"
 
-const Form = ({btntxt}) => {
+const Form = ({btntxt ,heading}) => {
 
     // form
     const form = useRef();
@@ -66,7 +66,7 @@ const Form = ({btntxt}) => {
 
     return (
         <>
-            <h4>Book Your Site Visit</h4>
+            <h4>{heading}</h4>
             {messageSent ? (
                 <div className='form-message'>
                     <p>Message sent successfully!</p>

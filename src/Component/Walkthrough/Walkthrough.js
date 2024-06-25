@@ -13,7 +13,7 @@ const Walkthrough = () => {
                     </div>
                     <div className="walkthrough-right">
                         <div className="walkthrough-form">
-                        <Form btntxt={"Book A Site Visit"} />
+                        <Form heading={"Book Your Site Visit"} btntxt={"Book A Site Visit"} />
                         </div>
                     </div>
                 </div>

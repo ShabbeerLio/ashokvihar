@@ -21,6 +21,9 @@
 .sitevisit-item{
     width: 50%;
 }
+.sitevisit-item h4{
+    margin-bottom: 1.5rem;
+}
 
 @media (min-width: 1200px) {
   .SiteVisit-main {

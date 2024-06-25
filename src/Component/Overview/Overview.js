@@ -28,7 +28,7 @@ const Overview = () => {
                 <div className="overview-item">
                     <div className="overview-left">
                         <div className="overview-form">
-                            <Form btntxt={"Book A Site Visit"} />
+                        <Form heading={"Book Your Site Visit"} btntxt={"Book A Site Visit"} />
                         </div>
                     </div>
                     <div className="overview-right">
