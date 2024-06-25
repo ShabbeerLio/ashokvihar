@@ -28,7 +28,7 @@ const Overview = () => {
                 <div className="overview-item">
                     <div className="overview-left">
                         <div className="overview-form">
-                            <Form />
+                            <Form btntxt={"Book A Site Visit"} />
                         </div>
                     </div>
                     <div className="overview-right">
@@ -36,8 +36,8 @@ const Overview = () => {
                             <h3>Overview</h3>
                         </div>
                         <div className="overview-detail">
-                            <p>Godrej Ashok Vihar Apartments, on the other hand, are constructed on the new floor plan to obtain its premium benefit, and then the new structure and appealing services make it a top-notch residential address. With adherence to international standards and the incorporation of modern-day comforts and amenities, each of our products ensures the pinnacle of exquisite living. We have created a solid relationship with our customers as a result of our customer-centric strategy.</p>
-                            <p>We strive hard to provide clients with high-quality residences on time. To ensure that the service is flawless, our quality control team inspects every procedure of apartment development. We have established ourselves as a well-known company that provides a diverse range of 2, 3, and 4 BHK exotic apartments in Delhi NCR.</p>
+                            <p>The apartments at Godrej Ashok Vihar New Delhi consist of large and well illuminated rooms accompanied by elegant interior designs. Every living space has well-finished and noble hardware and furniture, maximum glazing of rooms to receive daylight, and terraces or loggias with magnificent views. Single, couple or a family, there is a type of housing for everyone, choosing from the number of rooms and the size of the house. We make sure that no part of your home is left unattended, hence, every part of your home is as excellent as the other.                            </p>
+                            <p>Prime Location the area enjoys Excellent Connectivity. Life in Godrej Ashok Vihar is all about location and connectivity, to its credit, it has both majestically. In terms of accessibility it is confirmed that the area is well connected to major roads, metro stations, and public transportation. Well established schools, hospitals, shopping malls and recreational facilities for entertainment are found with in this neighbourhood hence people can easily run their daily errands without too much hassle. Take advantage of the great environment of this culturally diverse locality and modern conveniences that guarantee the highest standard of living.                            </p>
                         </div>
                         <div className="overview-category">
                             <ReactOwlCarousel

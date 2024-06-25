@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react'
 import "./FloorPlan.css"
-import FloorPlanData from './FloorPlanData'
 import { useLocation } from 'react-router-dom';
+import Form from '../../Component/Form/Form';
 
 const FloorPlan = (props) => {
     /* global dataLayer */
@@ -44,33 +44,26 @@ const FloorPlan = (props) => {
             const script = document.createElement('script');
             script.id = gaScriptId;
             script.async = true;
-            script.src = 'https://www.googletagmanager.com/gtag/js?id=G-S2XS9C6S8C';
+            // script.src = 'https://www.googletagmanager.com/gtag/js?id=G-S2XS9C6S8C';
             document.head.appendChild(script);
 
             script.onload = () => {
                 gtag('js', new Date());
-                gtag('config', 'G-S2XS9C6S8C');
+                // gtag('config', 'G-S2XS9C6S8C');
             };
         }
     }, [props.title, props.descriptions, location.pathname]);
     return (
-        <div className='FloorPlan'>
-            <div className='FloorPlan-main'>
+        <div className='SiteVisit'>
+            <div className='SiteVisit-main'>
                 <div className="Page-title">
-                    <h1>Floor Plan</h1>
+                    <h1>Ashok Vihar Floor Plan ON REQUEST</h1>
                 </div>
-                {FloorPlanData.map((item) => (
-                    <>
-                        <div className="floorplan-box">
-                            <div className="floorplan-box-image">
-                                <img src={item.cover1} alt={item.alttag1} />
-                            </div>
-                            <div className="floorplan-box-image">
-                                <img src={item.cover2} alt={item.alttag2} />
-                            </div>
-                        </div>
-                    </>
-                ))}
+                <div className="sitevisit-box">
+                    <div className="sitevisit-item">
+                        <Form btntxt={"Request Now"} />
+                    </div>
+                </div>
             </div>
         </div>
     )

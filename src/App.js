@@ -13,6 +13,9 @@ import SiteVisit from "./Pages/SiteVisit/SiteVisit";
 
 function App() {
 
+  const title = "Godrej Ashok Vihar| New Upcoming Project In Delhi"
+  const description = "Godrej Ashok Vihar New Upcoming Residential Project In Delhi Developed by Godrej Properties."
+
   // remove inspect and copy element
    useEffect(() => {
     const handleRightClick = (e) => {
@@ -38,13 +41,13 @@ function App() {
       <BrowserRouter>  
         <Navbar />
         <Routes>
-          <Route path="/" exact element={<Home title={"Godrej Ashok Vihar| New Upcoming Project In Delhi"} descriptions={"Godrej Ashok Vihar New Upcoming Residential Project In Delhi Developed by Godrej Properties."} />} />
-          <Route path="/gallery" exact element={<Gallery title={"Godrej Ashok Vihar| New Upcoming Project In Delhi"} descriptions={"Godrej Ashok Vihar New Upcoming Residential Project In Delhi Developed by Godrej Properties."} />} />
-          <Route path="/price-list" exact element={<PriceList title={"Godrej Ashok Vihar| New Upcoming Project In Delhi"} descriptions={"Godrej Ashok Vihar New Upcoming Residential Project In Delhi Developed by Godrej Properties."} />} />
-          <Route path="/master-plan" exact element={<MasterPlan title={"Godrej Ashok Vihar| New Upcoming Project In Delhi"} descriptions={"Godrej Ashok Vihar New Upcoming Residential Project In Delhi Developed by Godrej Properties."} />} />
-          <Route path="/floor-plans" exact element={<FloorPlan title={"Godrej Ashok Vihar| New Upcoming Project In Delhi"} descriptions={"Godrej Ashok Vihar New Upcoming Residential Project In Delhi Developed by Godrej Properties."} />} />
-          <Route path="/location" exact element={<Location title={"Godrej Ashok Vihar| New Upcoming Project In Delhi"} descriptions={"Godrej Ashok Vihar New Upcoming Residential Project In Delhi Developed by Godrej Properties."} />} />
-          <Route path="/enquery" exact element={<SiteVisit title={"Godrej Ashok Vihar| New Upcoming Project In Delhi"} descriptions={"Godrej Ashok Vihar New Upcoming Residential Project In Delhi Developed by Godrej Properties."} />} />
+          <Route path="/" exact element={<Home title={title} descriptions={description} />} />
+          <Route path="/gallery" exact element={<Gallery title={title} descriptions={description} />} />
+          <Route path="/price-list" exact element={<PriceList title={title} descriptions={description} />} />
+          <Route path="/master-plan" exact element={<MasterPlan title={title} descriptions={description} />} />
+          <Route path="/floor-plans" exact element={<FloorPlan title={title} descriptions={description} />} />
+          <Route path="/location" exact element={<Location title={title} descriptions={description} />} />
+          <Route path="/enquery" exact element={<SiteVisit title={title} descriptions={description} />} />
         </Routes>
         <Footer />
       </BrowserRouter>

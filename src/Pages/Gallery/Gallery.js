@@ -10,10 +10,10 @@ import GalleryData from '../../Component/HGallery/GalleryData';
 const Gallery = (props) => {
 
     const [model, setModel] = useState(false);
-    const [imgview, setImgview] = useState('')
+    // const [imgview, setImgview] = useState('')
 
     const getImg = (img) => {
-        setImgview(img);
+        // setImgview(img);
         setModel(true)
     }
 
@@ -61,12 +61,12 @@ const Gallery = (props) => {
             const script = document.createElement('script');
             script.id = gaScriptId;
             script.async = true;
-            script.src = 'https://www.googletagmanager.com/gtag/js?id=G-2RCPYCCP0C';
+            // script.src = 'https://www.googletagmanager.com/gtag/js?id=G-2RCPYCCP0C';
             document.head.appendChild(script);
 
             script.onload = () => {
                 gtag('js', new Date());
-                gtag('config', 'G-2RCPYCCP0C');
+                // gtag('config', 'G-2RCPYCCP0C');
             };
         }
     }, [props.title, props.descriptions, location.pathname]);

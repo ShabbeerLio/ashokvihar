@@ -5,12 +5,6 @@ import { Link } from 'react-router-dom'
 
 const About = (props) => {
 
-    const toTop = () => {
-        window.scrollTo({
-            top: 0,
-            behavior: 'auto'
-        });
-    }
 
     return (
         <div className="aboutUs">
@@ -25,8 +19,9 @@ const About = (props) => {
                     <div className="about-left">
                         <div className="about-detail">
                             <h3>GODREJ ASHOK VIHAR DELHI</h3>
-                            <p>GODREJ ASHOK VIHAR is one of the most prestigious companies involved in providing a wide range of Premium Housing Projects. Our Housing Projects are well-knit across 27 acres of land and offer 3.5, 4.5, and 5.5 BHK exotic apartments laced over a smart floor plan to provide premium living space where every corner has a purpose.  </p>
-                            <p>This housing complex has been designed to accommodate a lifestyle that is superior to that of city living. A life surrounded by pure greenery, society’s common compassion, and the luxury of time. During the construction of the House, we also adhere to industry standards. We are a company that believes in building long-term relationships with clients so that we may provide them with the home that best suits their needs. Godrej Ashok Vihar Delhi offers a wide selection of modern amenities, including a gym, spa, clubhouse, sports hub, swimming pool, gardens with seating areas, and much more to keep you entertained.</p>
+                            <p>Welcome to Godrej Ashok Vihar Delhi Living the High Life Delhi Style, Discover Godrej Ashok Vihar- A beautiful addition to lifestyle homes that is strategically located in the energetic city of Delhi. Sophisticated designs of our homes ensure that they incorporate the latest facilities with an ageless touch. Located in Ashok Vihar which is one of the most preferred areas in the city the facility makes sure that the client is in touch with the hustle and bustle of the city while providing a very quiet environment. Lease our well designed units and enjoy the ultimate in city lifestyles.                            </p>
+                            <p>Luxurious services to cater for each and every need that a human being can ever imagine of. 
+Haven’t we already mentioned how our facility in Godrej Ashok Vihar gives you all the modern touches you’d need for a quality way of life? Our modern clubhouse is equipped with the modern amenities which include the gym facility, swimming pool, yoghurt and meditation area. For recreation, we have our professionally designed landscape Bursary gardens, children’s playground, and a banquet hall. all these facilities are aimed at achieving a healthy lifestyle and fitness and all the basic needs for a family are provided within the compound.                            </p>
                         </div>
                         <div className="about-button">
                                 <Link to='tel: +919999999999'>

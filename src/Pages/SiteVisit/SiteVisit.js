@@ -45,12 +45,12 @@ const SiteVisit = (props) => {
             const script = document.createElement('script');
             script.id = gaScriptId;
             script.async = true;
-            script.src = 'https://www.googletagmanager.com/gtag/js?id=G-S2XS9C6S8C';
+            // script.src = 'https://www.googletagmanager.com/gtag/js?id=G-S2XS9C6S8C';
             document.head.appendChild(script);
 
             script.onload = () => {
                 gtag('js', new Date());
-                gtag('config', 'G-S2XS9C6S8C');
+                // gtag('config', 'G-S2XS9C6S8C');
             };
         }
     }, [props.title, props.descriptions, location.pathname]);
@@ -63,7 +63,7 @@ const SiteVisit = (props) => {
                 </div>
                 <div className="sitevisit-box">
                     <div className="sitevisit-item">
-                        <Form />
+                    <Form btntxt={"Book A Site Visit"} />
                     </div>
                 </div>
             </div>

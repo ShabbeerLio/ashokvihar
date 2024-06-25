@@ -1,27 +1,27 @@
 const HighlightsData = [
     {
         id: 1,
-        detail: "Experience the charm of European aesthetics with meticulously designed residences",
+        detail: "Prime Location: Since it’s located in Ashok Vihar an influential locality in Northern India’s capital Delhi.",
     },
     {
         id: 2,
-        detail: "Indulge in a lifestyle of opulence with lavish amenities",
+        detail: "Luxurious Apartments: Clean and cozy houses with all the comforts of thepresent day and comfortable layout.",
     },
     {
         id: 3,
-        detail: "Enjoy the convenience of living in Delhi, with seamless connectivity to major hubs",
+        detail: "World-Class Amenities: Swimming pool, playground, sporting equipments and facilities, and sports club house respectively.",
     },
     {
         id: 4,
-        detail: "Embrace a sustainable lifestyle surrounded by lush greenery, landscaped gardens.",
+        detail: "Excellent Connectivity: Proximity to major arterials and routes,public transport, schools, hospitals, and shops and other shopping facilities.",
     },
     {
         id: 5,
-        detail: "Built to the highest standards of quality and craftsmanship.",
+        detail: "Advanced Security: They have features such as cameras, watchmen, a gate, and enough parking space to name but a few.",
     },
     {
         id: 6,
-        detail: "Elevate your living experience with a host of premium amenities, impeccable design.",
+        detail: "Luxurious services to cater for each and every need that a human being can ever imagine of.",
     },
 ]
 
