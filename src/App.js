@@ -18,24 +18,24 @@ function App() {
   const description = "Godrej Ashok Vihar New Upcoming Residential Project In Delhi Developed by Godrej Properties."
 
   // remove inspect and copy element
-   useEffect(() => {
-    const handleRightClick = (e) => {
-      e.preventDefault();
-    };
+  //  useEffect(() => {
+  //   const handleRightClick = (e) => {
+  //     e.preventDefault();
+  //   };
 
-    const handleSelect = (e) => {
-      e.preventDefault();
-      return false;
-    };
+  //   const handleSelect = (e) => {
+  //     e.preventDefault();
+  //     return false;
+  //   };
 
-    document.addEventListener('selectstart', handleSelect);
-    document.addEventListener('contextmenu', handleRightClick);
+  //   document.addEventListener('selectstart', handleSelect);
+  //   document.addEventListener('contextmenu', handleRightClick);
 
-    return () => {
-      document.removeEventListener('contextmenu', handleRightClick);
-      document.removeEventListener('selectstart', handleSelect);
-    };
-  }, []);
+  //   return () => {
+  //     document.removeEventListener('contextmenu', handleRightClick);
+  //     document.removeEventListener('selectstart', handleSelect);
+  //   };
+  // }, []);
 
   return (
     <>
